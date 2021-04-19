@@ -33,7 +33,7 @@ class Resticprofile < Formula
   end
 
   test do
-    assert_match "resticprofile version #{version}", shell_output("#{bin}/resticprofile version")
+    assert_match /^resticprofile version #{version}/, shell_output("#{bin}/resticprofile version")
 
     (testpath/"restic_repo").mkdir
     (testpath/"password.txt").write("key")
