@@ -10,23 +10,23 @@ class Resticprofile < Formula
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/creativeprojects/resticprofile/releases/download/v0.13.1/resticprofile_0.13.2_darwin_amd64.tar.gz"
+    url "https://github.com/creativeprojects/resticprofile/releases/download/v0.13.2/resticprofile_0.13.2_darwin_amd64.tar.gz"
     sha256 "cbea5b1d3c40ae50d03554f0c7d75ae790118514fcaebbeb365d87b8b4c44a84"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/creativeprojects/resticprofile/releases/download/v0.13.1/resticprofile_0.13.2_darwin_arm64.tar.gz"
+    url "https://github.com/creativeprojects/resticprofile/releases/download/v0.13.2/resticprofile_0.13.2_darwin_arm64.tar.gz"
     sha256 "86709624470778fe52b43b45b2886d94385c0c2b0231ef1c7905bb5c96beae20"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/creativeprojects/resticprofile/releases/download/v0.13.1/resticprofile_0.13.2_linux_amd64.tar.gz"
+    url "https://github.com/creativeprojects/resticprofile/releases/download/v0.13.2/resticprofile_0.13.2_linux_amd64.tar.gz"
     sha256 "e954eb7dd5aac6e05bb192a38a63c5989621987d8bf13b1e94cc8659321d7fde"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/creativeprojects/resticprofile/releases/download/v0.13.1/resticprofile_0.13.2_linux_armv6.tar.gz"
+    url "https://github.com/creativeprojects/resticprofile/releases/download/v0.13.2/resticprofile_0.13.2_linux_armv6.tar.gz"
     sha256 "bea05aac85495f53ef453c13753a8b1a59ec7760f66137f4c1c4e1aa2213b111"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/creativeprojects/resticprofile/releases/download/v0.13.1/resticprofile_0.13.2_linux_arm64.tar.gz"
+    url "https://github.com/creativeprojects/resticprofile/releases/download/v0.13.2/resticprofile_0.13.2_linux_arm64.tar.gz"
     sha256 "f76b84da15ac7dbf62fd74e5458d7e570b10924f3d23d6021f909a1675d93990"
   end
 
