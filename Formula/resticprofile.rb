@@ -5,33 +5,33 @@
 class Resticprofile < Formula
   desc "Configuration profiles for restic backup"
   homepage "https://github.com/creativeprojects/resticprofile"
-  version "0.14.1"
+  version "0.15.0"
   license "GPL-3.0-only"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.14.1/resticprofile_0.14.1_darwin_amd64.tar.gz"
-      sha256 "c61006e4d2b11e39de7c3db569635d21c033ada2b2130a5844a2d50f16ce6a4c"
+      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.15.0/resticprofile_0.15.0_darwin_amd64.tar.gz"
+      sha256 "c203fc80725607851c21c0a20f8813ab86afa74460c585af3d6a44f2fc24f326"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.14.1/resticprofile_0.14.1_darwin_arm64.tar.gz"
-      sha256 "5377d47f36f1a898a37d7c6e9f3e54511c475f387aa27b770b0422a8e2003e27"
+      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.15.0/resticprofile_0.15.0_darwin_arm64.tar.gz"
+      sha256 "fa89e1c4e0cef8cc43b8475f3fa491e1b7b3bbdc423979e60050d2c8631995c6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.14.1/resticprofile_0.14.1_linux_amd64.tar.gz"
-      sha256 "1f3c4d19c6c52ce9c310bba9facba057ca59a1f27507fa3b3f51fa9be53ada61"
+      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.15.0/resticprofile_0.15.0_linux_amd64.tar.gz"
+      sha256 "2516d73311799acfd88128b18e769f6e8f24f60f8628b384201bc933aa4e680f"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.14.1/resticprofile_0.14.1_linux_armv6.tar.gz"
-      sha256 "9c143a480bc83dfe8a8c85e2652bceac0c6e8267795df9af31b91a846233a48e"
+      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.15.0/resticprofile_0.15.0_linux_armv6.tar.gz"
+      sha256 "60f85a4241b854f8b10ce39e3389912488086db53f9be2868a8709198821243d"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.14.1/resticprofile_0.14.1_linux_arm64.tar.gz"
-      sha256 "a195f4668c66fbcff82ca800bab516fd4b4551caab31ef024bd90b0a7ebf5ebc"
+      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.15.0/resticprofile_0.15.0_linux_arm64.tar.gz"
+      sha256 "7884031597c479452f7d0c84413b8d3a5cd8b1d664d42df3819c89112b6a235f"
     end
   end
 
