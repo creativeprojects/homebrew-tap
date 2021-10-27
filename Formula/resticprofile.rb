@@ -7,7 +7,6 @@ class Resticprofile < Formula
   homepage "https://github.com/creativeprojects/resticprofile"
   version "0.16.0"
   license "GPL-3.0-only"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
