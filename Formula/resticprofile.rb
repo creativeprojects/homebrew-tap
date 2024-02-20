@@ -5,23 +5,23 @@
 class Resticprofile < Formula
   desc "Configuration profiles for restic backup"
   homepage "https://github.com/creativeprojects/resticprofile"
-  version "0.25.0"
+  version "0.26.0"
   license "GPL-3.0-only"
 
   depends_on "restic" => :optional
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.25.0/resticprofile_no_self_update_0.25.0_darwin_arm64.tar.gz"
-      sha256 "038748cbb6fb59a6d8a0670852d81bdea57a17b0295eba3eee680524c750247f"
+      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.26.0/resticprofile_no_self_update_0.26.0_darwin_arm64.tar.gz"
+      sha256 "2f2049bbb5ab13a3d5d56ea6f5ff52397758b2fa7d4095a98bd484021ca3fa4b"
 
       def install
         bin.install "resticprofile"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.25.0/resticprofile_no_self_update_0.25.0_darwin_amd64.tar.gz"
-      sha256 "3e335eca26a794dc97c281e3ee7c4d565a00f72b655afd9c2d14d5d6836b78ec"
+      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.26.0/resticprofile_no_self_update_0.26.0_darwin_amd64.tar.gz"
+      sha256 "24e5e344c3cdf937d5086ce5683ff8c6b5eca9127eb07de3e694b2612c295c13"
 
       def install
         bin.install "resticprofile"
@@ -30,25 +30,25 @@ class Resticprofile < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.25.0/resticprofile_no_self_update_0.25.0_linux_armv6.tar.gz"
-      sha256 "689943312802e288dc56cd637d4b96397862dbc6530ecda529bdabab12289a26"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.26.0/resticprofile_no_self_update_0.26.0_linux_arm64.tar.gz"
+      sha256 "1fe4b5eae20e85e43b8a208f6a961c9708a818edb738b25da8442f702cd168a2"
 
       def install
         bin.install "resticprofile"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.25.0/resticprofile_no_self_update_0.25.0_linux_amd64.tar.gz"
-      sha256 "9a13f63491da10f9188f94cca181e2fbd05d30badb8c1fce7d8fd31361586528"
+      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.26.0/resticprofile_no_self_update_0.26.0_linux_amd64.tar.gz"
+      sha256 "2b1059dcea414530357197d9c380a902570f9befc2d59807d0febc252b804eae"
 
       def install
         bin.install "resticprofile"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.25.0/resticprofile_no_self_update_0.25.0_linux_arm64.tar.gz"
-      sha256 "df5b8ef56719157d4dadc6a4a855cba202b0769f28f29043fbbb243b33dadd8a"
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/creativeprojects/resticprofile/releases/download/v0.26.0/resticprofile_no_self_update_0.26.0_linux_armv6.tar.gz"
+      sha256 "530388c3316e6b42c36c8d76b94e6a3be07ee5e03f96fbbf0b914666dc0b1704"
 
       def install
         bin.install "resticprofile"
