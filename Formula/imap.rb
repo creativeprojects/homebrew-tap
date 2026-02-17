@@ -5,21 +5,21 @@
 class Imap < Formula
   desc "IMAP tools: backup, copy, move your emails between servers and locally"
   homepage "https://github.com/creativeprojects/imap"
-  version "0.3.11"
+  version "0.3.12"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/creativeprojects/imap/releases/download/v0.3.11/imap_0.3.11_darwin_amd64.tar.gz"
-      sha256 "c47c5b7a2db1e0d231762e666e689221c8d9d58badfcd6124eb6f86209cc1a50"
+      url "https://github.com/creativeprojects/imap/releases/download/v0.3.12/imap_0.3.12_darwin_amd64.tar.gz"
+      sha256 "997bc2b7fa243afd829ee86f0b556ac981ed9c86cb05fdff1f103371c91b5267"
 
       def install
         bin.install "imap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/creativeprojects/imap/releases/download/v0.3.11/imap_0.3.11_darwin_arm64.tar.gz"
-      sha256 "bd1ba22c5e93f12edf11d956f159f976b96aa34cd592827c1e91abf8a9e04a09"
+      url "https://github.com/creativeprojects/imap/releases/download/v0.3.12/imap_0.3.12_darwin_arm64.tar.gz"
+      sha256 "ca83489f0adc627ef948e01e1632eefeefcf695e0c423733e2e820d1eeb3d98b"
 
       def install
         bin.install "imap"
@@ -29,22 +29,22 @@ class Imap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/creativeprojects/imap/releases/download/v0.3.11/imap_0.3.11_linux_amd64.tar.gz"
-      sha256 "e2594495a0e931ae64b70f822da4107264ad702ddd7086cae8751e16a5c3d4ba"
+      url "https://github.com/creativeprojects/imap/releases/download/v0.3.12/imap_0.3.12_linux_amd64.tar.gz"
+      sha256 "b7f9a812620bcd2d0afae4f045cb7fb2e372c585d4502aab80f098c2377e10dc"
       def install
         bin.install "imap"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/creativeprojects/imap/releases/download/v0.3.11/imap_0.3.11_linux_armv6.tar.gz"
-      sha256 "ea5d9cddaee01396f07f36c610142826ac296197928f89cfce2d04270d2373d9"
+      url "https://github.com/creativeprojects/imap/releases/download/v0.3.12/imap_0.3.12_linux_armv6.tar.gz"
+      sha256 "0b10f2a340b92fce52ce60900cffb9cefac63c9f4ad44319778adda7cf4ebecd"
       def install
         bin.install "imap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/creativeprojects/imap/releases/download/v0.3.11/imap_0.3.11_linux_arm64.tar.gz"
-      sha256 "f2e69aa0b04cf16ad35d5e77dae218fd4a444382b8a856abcf87350d82523d26"
+      url "https://github.com/creativeprojects/imap/releases/download/v0.3.12/imap_0.3.12_linux_arm64.tar.gz"
+      sha256 "2adde59620539d9aa89413d452478452690fad80ba3c17c965fa5baa415264d1"
       def install
         bin.install "imap"
       end
